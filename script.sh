@@ -43,7 +43,7 @@ mkdir $HOME/Sites/$apache_host_name/logs
 sed "s/%hostname%/$apache_host_name/g" $curent_path/index.sample.html > $HOME/Sites/$apache_host_name/www/index.html
 
 # 3.
-sed -e "s/%username%\/Sites\/%hostname%/$user_name\/Sites\/$apache_host_name/g" -e "s/%hostname%/$apache_host_name/g" $curent_path/apache.sample.conf > $curent_path/$apache_host_name.dev.conf
+sed -e "s/%username%/$user_name/g" -e "s/%hostname%/$apache_host_name/g" $curent_path/apache.sample.conf > $curent_path/$apache_host_name.dev.conf
 sudo mv $curent_path/$apache_host_name.dev.conf /etc/apache2/vhosts/
 
 # 4.
