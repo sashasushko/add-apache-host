@@ -53,4 +53,4 @@ echo "127.0.0.1 $apache_host_name.dev" | sudo tee -a /etc/hosts
 sudo apachectl restart
 
 # 6.
-echo "Host '$apache_host_name' successfully added."
+echo "Host '$apache_host_name.dev' successfully added."
