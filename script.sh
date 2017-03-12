@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Порядок действий
-# 0. Проверка на отсутствие названия хоста
+# 0. Проверки
 # 1. Объявление переменных
 # 2. Создание папок "www" и "logs" хоста с индексным файлом
 # 3. Создание файла конфига по шаблону "apache.sample.conf"
@@ -10,10 +10,20 @@
 # 6. Уведомление об окончании
 
 # 0.
+# Проверяем, что есть название хоста
 if [ -z "$1" ]
   then
-    echo "Please, set host name as argument and try again."
+    echo "Please, set host name as first argument and try again."
     exit
+fi
+
+# Проверяем, что название содержит только буквы, цифры и дефис
+if [[ $1 =~ ^[A-Za-z0-9_-]+$ ]]
+  then
+    # ToDo: переписать условие так, чтобы не было else
+  else
+    echo "Host name must contain only letters, numbers, dash and underscore."
+	exit
 fi
 
 # 1.
