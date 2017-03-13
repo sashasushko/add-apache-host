@@ -19,12 +19,10 @@ if [ -z "$1" ]
 fi
 
 # Check that host name contains only latin letters, numbers, dash and underscore
-if [[ $1 =~ ^[A-Za-z0-9_-]+$ ]]
+if ! [[ $1 =~ ^[A-Za-z0-9_-]+$ ]]
   then
-    # ToDo: Rewrite "if" construction so that remove "else" block
-  else
     echo "Host name must contain only latin letters, numbers, dash and underscore."
-	exit
+    exit
 fi
 
 # 1.
