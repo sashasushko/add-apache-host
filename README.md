@@ -1,6 +1,6 @@
-# add-apache-host
+# [add-apache-host](//github.com/sashasushko/add-apache-host/)
 
-[По-русски](/sashasushko/add-apache-host/blob/master/README.ru.md)
+[По-русски](//github.com/sashasushko/add-apache-host/blob/master/README.ru.md)
 
 Simple bash script for adding Apache host.
 
