@@ -1,13 +1,10 @@
-# [add-apache-host](//github.com/sashasushko/add-apache-host/)
-
-[По-русски](//github.com/sashasushko/add-apache-host/blob/master/README.ru.md)
+# add-apache-host
 
 Simple bash script for adding Apache host.
 
-### ToDo
-- [ ] rewrite paths in `script.sh`, so that can add the bash short command
-- [ ] add zone and document root path settings
-- [ ] add SSL settings
+Clone repo to your home directory. Then run `script.sh` and pass hostname without domain zone as argument. That's all
+
+You need Apache installed.
 
 ### Links
 * ["How to" by Andy Miller](https://getgrav.org/blog/macos-sierra-apache-multiple-php-versions)
